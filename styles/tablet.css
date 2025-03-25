@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+:root {
+  --cor0: #5f2c82;
+  --cor1: #49a09d;
+  --cor2: #94cfcd;
+}
+
+body {
+  background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+}
+
+section#login {
+  flex-direction: row;
+  width: 80vw;
+  height: 41vh;
+}
+
+section#login > div#img {
+  width: 30%;
+  height: 100%;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+section#login > div#formulario {
+  width: 70%;
+}
+
+div.campo > input {
+  width: calc(98% - 43px);
+}
