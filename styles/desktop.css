@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+section#login {
+  width: 950px;
+  height: 360px;
+  flex-direction: row-reverse;
+}
+
+section#login > div#img {
+  width: 50%;
+}
+
+section#login > div#formulario {
+  width: 50%;
+}
+
+div#formulario > h1 {
+  font-size: 2em;
+  margin-top: -25px;
+}
+
+div#formulario > p {
+  font-size: 1em;
+  margin: 12px 0px;
+}
