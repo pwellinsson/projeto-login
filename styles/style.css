@@ -5,7 +5,165 @@ Green: #49a09d
 Lilac: #5f2c82
 */
 
+/* Typical Device Breakpoints
+----------------------------------------------
+Pequenas Telas (Extra Pequeno): até 576px (Normalmente começa em 320px)
+Celular (Pequeno): de 576px ate 768px
+Tablet (Médio): de 768px ate 992px
+Desktop (Grande): de 992px ate 1200px
+Grandes Telas (Extra Grande): acima de 1200px
+*/
+
 :root {
-    --cor1: #49a09d;
-    --cor2: #5f2c82;
+  --cor0: #5f2c82;
+  --cor1: #49a09d;
+  --cor3: #94cfcd;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor0);
+}
+/*
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}*/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+section#login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 250px;
+  height: 515px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+  transition: width 0.3s, height 0.3s;
+  transition-timing-function: ease;
+}
+
+section#login > div#img {
+  background-color: var(--cor1);
+  background-image: url(../img/metal.jpg);
+  height: 200px;
+  width: 250px;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+div#formulario > h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+div#formulario > p {
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  padding: 3px 4px 3px 10px;
+}
+
+div.campo {
+  display: flex;
+  background-color: var(--cor0);
+  border-radius: 8px;
+  margin: 5px auto;
+  width: 95%;
+  height: 40px;
+  align-items: center;
+}
+
+div.campo > i.material-icons {
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+  color: white;
+}
+
+div.campo > input {
+  background-color: var(--cor3);
+  height: 90%;
+  width: 78%;
+  border-radius: 8px;
+  border: none;
+}
+
+div.campo > input:focus-within {
+  background-color: white;
+  color: var(--cor0);
+}
+
+div.campo > input::placeholder {
+  padding: 5px;
+}
+
+div#formulario .botao {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  margin: 5px auto;
+  border-radius: 5px;
+  width: 95%;
+  height: 40px;
+}
+
+div#formulario input[type="submit"] {
+  background-color: var(--cor1); /* Temporário */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+div#formulario input[type="submit"]:hover {
+  background-color: var(--cor0); /* Temporário */
+}
+
+div#formulario a.botao {
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 5px;
+  border: 1px solid var(--cor1);
+  background-color: white; /* Temporário */
+  color: #3e817f;
+  text-decoration: none;
+}
+
+div#formulario a.botao:hover {
+  background-color: var(--cor0); /* Temporário */
+}
+
+div#formulario a.botao > i.material-icons {
+  font-size: 0.8em;
+  margin-top: 9px;
 }
