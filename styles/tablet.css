@@ -28,5 +28,5 @@ section#login > div#formulario {
 }
 
 div.campo > input {
-  width: calc(98% - 43px);
+  width: calc(100% - 42px);
 }
