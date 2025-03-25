@@ -5,15 +5,6 @@ Green: #49a09d
 Lilac: #5f2c82
 */
 
-/* Typical Device Breakpoints
-----------------------------------------------
-Pequenas Telas (Extra Pequeno): até 576px (Normalmente começa em 320px)
-Celular (Pequeno): de 576px ate 768px
-Tablet (Médio): de 768px ate 992px
-Desktop (Grande): de 992px ate 1200px
-Grandes Telas (Extra Grande): acima de 1200px
-*/
-
 :root {
   --cor0: #5f2c82;
   --cor1: #49a09d;
@@ -21,35 +12,17 @@ Grandes Telas (Extra Grande): acima de 1200px
 }
 
 * {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0px;
   padding: 0px;
+  /* Faz com que os elementos tenham o mesmo tamanho da caixa */
+  box-sizing: border-box; 
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--cor0);
 }
-/*
-main {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
-
-section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    width: 250px;
-    height: 515px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
-    transition: width 0.3s, height 0.3s;
-    transition-timing-function: ease;
-}*/
 
 main {
   display: flex;
@@ -69,17 +42,15 @@ section#login {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
-  transition: width 0.3s, height 0.3s;
+  transition: width .3s, height .3s;
   transition-timing-function: ease;
 }
 
 section#login > div#img {
-  background-color: var(--cor1);
-  background-image: url(../img/metal.jpg);
+  background: var(--cor1)  url(../img/metal.jpg) no-repeat center bottom;
+  background-size: cover;
   height: 200px;
   width: 250px;
-  background-size: cover;
-  background-position: center bottom;
 }
 
 div#formulario > h1 {
@@ -114,7 +85,7 @@ div.campo > i.material-icons {
 div.campo > input {
   background-color: var(--cor3);
   height: 90%;
-  width: 78%;
+  width: 82%;
   border-radius: 8px;
   border: none;
 }
