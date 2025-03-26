@@ -7,7 +7,8 @@ Lilac: #5f2c82
 
 :root {
   --cor0: #5f2c82;
-  --cor1: #49a09d;
+  --cor1: #2e6866;
+  --cor2: #49a09d;
   --cor3: #94cfcd;
 }
 
@@ -47,7 +48,7 @@ section#login {
 }
 
 section#login > div#img {
-  background: var(--cor1)  url(../img/metal.jpg) no-repeat center bottom;
+  background: var(--cor2)  url(../img/metal.jpg) no-repeat center bottom;
   background-size: cover;
   height: 200px;
   width: 250px;
@@ -65,7 +66,7 @@ div#formulario > p {
   padding: 3px 4px 3px 10px;
 }
 
-div.campo {
+form > div.campo {
   display: flex;
   background-color: var(--cor0);
   border-radius: 8px;
@@ -110,28 +111,28 @@ div#formulario .botao {
 }
 
 div#formulario input[type="submit"] {
-  background-color: var(--cor1); /* Temporário */
+  background-color: var(--cor2);
   color: white;
   border: none;
   cursor: pointer;
 }
 
 div#formulario input[type="submit"]:hover {
-  background-color: var(--cor0); /* Temporário */
+  background-color: var(--cor1);
 }
 
 div#formulario a.botao {
   text-align: center;
   padding-top: 5px;
   margin-top: 5px;
-  border: 1px solid var(--cor1);
-  background-color: white; /* Temporário */
-  color: #3e817f;
+  border: 1px solid var(--cor2);
+  background-color: white;
+  color: var(--cor1);
   text-decoration: none;
 }
 
 div#formulario a.botao:hover {
-  background-color: var(--cor0); /* Temporário */
+  background-color: var(--cor3);
 }
 
 div#formulario a.botao > i.material-icons {
