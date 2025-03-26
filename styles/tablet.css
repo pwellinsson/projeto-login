@@ -1,13 +1,7 @@
 @charset "UTF-8";
 
-:root {
-  --cor0: #5f2c82;
-  --cor1: #49a09d;
-  --cor2: #94cfcd;
-}
-
 body {
-  background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+  background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
 }
 
 section#login {
